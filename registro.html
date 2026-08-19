@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../Intro_html/img/WhatsApp_Image_2026-07-28_at_6.54.54_PM-removebg-preview.ico" type="image/x-icon">
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <div id="encabezado-principal">
+        <div id="logo-header">
+            <a href="Home.html">
+                <img src="../Intro_html/img/logo.jpeg" alt="Logo Variedades Mibed" id="img-logo-header">
+            </a>
+        </div>
+
+        <input type="checkbox" id="menu_bar">
+        <label for="menu_bar" id="btn-menu"><i class="fa fa-bars"></i></label>
+
+        <div id="menu-navegacion">
+            <a href="Home.html" id="link-home"><i class="fa fa-home"></i> Home</a> |
+            <a href="Nosotros.html" id="link-nosotros"><i class="fa fa-users"></i> Nosotros</a> |
+            <a href="productos.html" id="link-productos"><i class="fa fa-cubes"></i> Productos</a> |
+            <a href="contacto.html" id="link-contactos"><i class="fa fa-phone"></i> Contacto</a>
+        </div>
+        <div id="espacio-vacio"></div>
+</div>
+    <div id="seccion-registro">
+        <div id="titulo-registro">Registro de usuario</div>
+
+        <form action="" method="post" id="formulario-registro">
+            <div id="campo-nombre">
+                <label for="input-nombre" id="label-nombre">Nombre</label>
+                <input type="text" name="documento" id="input-nombre" required placeholder="Ingrese aqui su Nombre">
+            </div>
+
+            <div id="campo-apellido">
+                <label for="input-apellido" id="label-apellido">Apellido</label>
+                <input type="text" name="nombre" id="input-apellido" required placeholder="Ingrese aqui su Apellido">
+            </div>
+
+            <div id="campo-correo">
+                <label for="input-correo" id="label-correo">Correo electronico</label>
+                <input type="email" name="correo" id="input-correo" required placeholder="Correo@email.com">
+            </div>
+
+            <div id="campo-contrasena">
+                <label for="input-contrasena" id="label-contrasena">Contraseña</label>
+                <input type="password" name="contraseña" id="input-contrasena" required placeholder="Ingrese aqui su Contraseña">
+            </div>
+
+            <div id="campo-fecha">
+                <label for="input-fecha" id="label-fecha">Fecha Nac.</label>
+                <input type="date" name="fechaNac" id="input-fecha" required>
+            </div>
+
+            <div id="campo-telefono">
+                <label for="input-telefono" id="label-telefono">Telefono</label>
+                <input type="text" name="telefono" id="input-telefono" required placeholder="Ingrese aqui su telefono">
+            </div>
+
+            <div id="campo-genero">
+                <label id="label-genero">Genero</label>
+                <input type="radio" name="genero" id="genero-m" value="Masculino"><label for="genero-m">Masculino</label>
+                <input type="radio" name="genero" id="genero-f" value="Femenino"><label for="genero-f">Femenino</label>
+                <input type="radio" name="genero" id="genero-o" value="Otro"><label for="genero-o">Otro</label>
+            </div>
+
+            <div id="campo-nacionalidad">
+                <label for="select-nacionalidad" id="label-nacionalidad">Nacionalidad</label>
+                <select name="nacionalidad" id="select-nacionalidad" required>
+                    <option value="">Seleccione</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="chile">Chile</option>
+                    <option value="bolivia">Bolivia</option>
+                    <option value="francia">Francia</option>
+                </select>
+            </div>
+
+            <div id="campo-condiciones">
+                <input type="checkbox" name="condiciones" id="check-condiciones" required>
+                <label for="check-condiciones" id="label-condiciones">Acepto terminos y condiciones.</label>
+            </div>
+
+            <hr id="separador-form">
+
+            <div id="botones-formulario">
+                <button type="submit" name="enviar" id="btn-registrarme">Registrarme</button>
+                <button type="reset" id="btn-limpiar">Limpiar</button>
+            </div>
+
+            <div id="texto-login">
+                <p id="parrafo-login">Si ya tienes una cuenta <a href="iniciar.html" target="_blank" id="link-iniciar">inicia sesion</a></p>
+            </div>
+        </form>
+    </div>
+    <div id="pie-pagina">
+        <div id="contenido-pie">
+            <img src="../Intro_html/img/logo.jpeg" alt="Variedades Mibed" id="img-logo-pie">
+
+            <div id="redes-sociales">
+                <a href=""><i class="fa fa-whatsapp" id="icono-whatsapp"></i></a>
+                <a href=""><i class="fa fa-facebook" id="icono-facebook"></i></a>
+                <a href=""><i class="fa fa-instagram" id="icono-instagram"></i></a>
+                <a href=""><i class="fa fa-youtube" id="icono-youtube"></i></a>
+            </div>
+        </div>
+
+        <hr id="separador-pie">
+
+        <p id="texto-copyright">
+            © 2026 Variedades Mibed. Todos los derechos reservados.
+        </p>
+    </div>
+
+</body>
+</html>

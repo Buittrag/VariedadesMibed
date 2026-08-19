@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+background-color: #d8b4eb;
+font-family: 'Times New Roman', Times, serif;
+}
+
+#encabezado-principal {
+background-color: #3f1059;
+padding: 15px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: relative;
+}
+
+#menu_bar{
+display: none;
+}
+
+#btn-menu{
+display: none;
+color: white;
+font-size: 26px;
+cursor: pointer;
+}
+
+#logo-header {
+display: flex;
+align-items: center;
+}
+
+#img-logo-header {
+width: 150px;
+}
+
+#menu-navegacion a {
+color: #ffffff;
+text-decoration: underline;
+font-size: 20px;
+font-weight: bold;
+margin: 0 8px;
+}
+
+#botones {
+display: flex;
+align-items: center;
+}
+
+@media (max-width: 768px){
+#btn-menu{
+display: block;
+}
+
+#menu-navegacion{
+display: none;
+flex-direction: column;
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+background-color: #3f1059;
+text-align: center;
+z-index: 30;
+}
+
+#menu_bar:checked ~ #menu-navegacion{
+display: flex;
+}
+
+#menu-navegacion a{
+display: block;
+margin: 12px 0;
+}
+}
+
+#registrarse,
+#iniciar {
+background-color: white;
+color: #3f1059;
+border: none;
+padding: 8px 15px;
+border-radius: 5px;
+cursor: pointer;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+}
+
+#registrarse {
+margin-right: 10px;
+}
+
+#titulo-contacto {
+background-color: #3f1059;
+color: white;
+padding: 25px;
+margin-top: 10px;
+text-align: center;
+}
+
+#titulo-contactanos {
+font-size: 22px;
+font-weight: bold;
+border-bottom: 1px solid #222;
+width: 50%;
+margin: auto;
+padding-bottom: 8px;
+}
+
+#texto-contactanos {
+font-size: 14px;
+font-weight: bold;
+margin-top: 15px;
+}
+
+#seccion-contacto {
+display: flex;
+padding: 30px;
+gap: 60px;
+min-height: 450px;
+}
+
+#informacion-contacto {
+width: 45%;
+}
+
+#titulo-nuestro-contacto {
+font-size: 16px;
+font-weight: bold;
+border-bottom: 1px solid #222;
+padding-bottom: 8px;
+width: 75%;
+}
+
+#telefono,
+#correo,
+#direccion,
+#horario {
+width: 75%;
+padding: 10px 0;
+border-bottom: 1px solid #222;
+font-size: 12px;
+}
+
+#titulo-telefono,
+#titulo-correo,
+#titulo-direccion,
+#titulo-horario {
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+#telefono i,
+#correo i,
+#direccion i,
+#horario i {
+font-size: 16px;
+margin-right: 5px;
+}
+
+/* UBICACION */
+
+#ubicacion {
+margin-top: 20px;
+}
+
+#titulo-ubicacion {
+font-size: 13px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+#contenedor-mapa {
+text-align: left;
+}
+
+#mapa-ubicacion {
+width: 80%;
+height: 160px;
+border: 0;
+}
+
+#separador-contacto {
+width: 1px;
+background-color: #222;
+}
+
+#formulario-contacto {
+width: 45%;
+}
+
+#titulo-formulario {
+font-size: 16px;
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+#formulario {
+display: flex;
+flex-direction: column;
+gap: 18px;
+}
+
+#campo-nombre,
+#campo-correo,
+#campo-asunto,
+#campo-mensaje {
+display: flex;
+flex-direction: column;
+}
+
+#campo-nombre label,
+#campo-correo label,
+#campo-asunto label,
+#campo-mensaje label {
+font-size: 12px;
+margin-bottom: 5px;
+}
+
+#input-nombre,
+#input-correo,
+#input-asunto {
+width: 80%;
+height: 22px;
+border: 1px solid #222;
+font-family: 'Times New Roman', Times, serif;
+}
+
+#input-mensaje {
+width: 80%;
+height: 95px;
+resize: none;
+border: 1px solid #222;
+font-family: 'Times New Roman', Times, serif;
+}
+
+#boton-mensaje {
+width: 80%;
+text-align: center;
+}
+
+#btn-enviar {
+background-color: white;
+color: #222;
+border: 1px solid #222;
+padding: 4px 10px;
+font-family: 'Times New Roman', Times, serif;
+font-size: 11px;
+cursor: pointer;
+}
+
+#pie-pagina {
+background-color: #3f1059;
+padding: 30px;
+color: white;
+}
+
+#contenido-pie {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+#img-logo-pie {
+width: 180px;
+}
+
+#icono-whatsapp {
+font-size: 50px;
+color: #075E54;
+margin: 0 5px;
+}
+
+#icono-facebook {
+font-size: 50px;
+color: #1877f2;
+margin: 0 5px;
+}
+
+#icono-instagram {
+font-size: 50px;
+color: #b413b4;
+margin: 0 5px;
+}
+
+#icono-youtube {
+font-size: 50px;
+color: #ff0000;
+margin: 0 5px;
+}
+
+#separador-pie {
+border: 0;
+border-top: 1px solid #444;
+margin-top: 30px;
+}
+
+#texto-copyright {
+text-align: right;
+margin: 20px 0 0 0;
+}

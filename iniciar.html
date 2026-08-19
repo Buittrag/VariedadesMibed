@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../Intro_html/img/WhatsApp_Image_2026-07-28_at_6.54.54_PM-removebg-preview.ico" type="image/x-icon">
+    <link rel="stylesheet" href="iniciar.css">
+</head>
+<body>
+    <div id="encabezado-principal">
+        <div id="logo-header">
+            <a href="Home.html">
+                <img src="../Intro_html/img/logo.jpeg" alt="Logo Variedades Mibed" id="img-logo-header">
+            </a>
+        </div>
+
+        <input type="checkbox" id="menu_bar">
+        <label for="menu_bar" id="btn-menu"><i class="fa fa-bars"></i></label>
+
+        <div id="menu-navegacion">
+            <a href="Home.html" id="link-home"><i class="fa fa-home"></i> Home</a> |
+            <a href="Nosotros.html" id="link-nosotros"><i class="fa fa-users"></i> Nosotros</a> |
+            <a href="productos.html" id="link-productos"><i class="fa fa-cubes"></i> Productos</a> |
+            <a href="contacto.html" id="link-contactos"><i class="fa fa-phone"></i> Contactos</a> |
+            <a href="registro.html" id="link-registro"><i class="fa fa-edit"></i> Registro</a>
+        </div>
+    </div>
+    <div id="seccion-iniciar">
+        <div id="titulo-iniciar">Iniciar sesión</div>
+
+        <form action="" method="post" id="formulario-iniciar">
+            <div id="campo-correo">
+                <label for="input-correo" id="label-correo">Correo</label>
+                <input type="text" name="documento" id="input-correo" required placeholder="Ingrese aqui su correo">
+            </div>
+
+            <div id="campo-contrasena">
+                <label for="input-contrasena" id="label-contrasena">Contraseña</label>
+                <input type="password" name="nombre" id="input-contrasena" required placeholder="Ingrese aqui su Contraseña">
+            </div>
+
+            <div id="campo-condiciones">
+                <input type="checkbox" name="condiciones" id="check-condiciones" required>
+                <label for="check-condiciones" id="label-condiciones">Acepto términos y condiciones.</label>
+            </div>
+
+            <hr id="separador-form">
+
+            <div id="botones-formulario">
+                <button type="submit" name="enviar" id="btn-iniciar">Iniciar sesión</button>
+                <button type="reset" id="btn-limpiar">Limpiar</button>
+            </div>
+
+            <div id="texto-registro">
+                <p id="parrafo-registro">Si no te has registrado <a href="registro.html" target="_blank" id="link-registro-form">Hazlo aquí</a></p>
+            </div>
+        </form>
+    </div>
+    <div id="pie-pagina">
+        <div id="contenido-pie">
+            <img src="../Intro_html/img/logo.jpeg" alt="Variedades Mibed" id="img-logo-pie">
+
+            <div id="redes-sociales">
+                <a href=""><i class="fa fa-whatsapp" id="icono-whatsapp"></i></a>
+                <a href=""><i class="fa fa-facebook" id="icono-facebook"></i></a>
+                <a href=""><i class="fa fa-instagram" id="icono-instagram"></i></a>
+                <a href=""><i class="fa fa-youtube" id="icono-youtube"></i></a>
+            </div>
+        </div>
+
+        <hr id="separador-pie">
+
+        <p id="texto-copyright">
+            © 2026 Variedades Mibed. Todos los derechos reservados.
+        </p>
+    </div>
+
+</body>
+</html>
